@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message req
+{
+	int32 num1=1;
+	int32 num2=2;
+}
+
+message res
+{
+	int32 res=1;
+
+}
+
+service Calculator{
+	rpc Add(req) returns (res){}
+}
